@@ -1,0 +1,3 @@
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch16/ch16_drill/build/CMakeFiles/rebuild_cache.dir
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch16/ch16_drill/build/CMakeFiles/edit_cache.dir
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch16/ch16_drill/build/CMakeFiles/ch16_drill.dir

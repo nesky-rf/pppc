@@ -1,0 +1,1239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Frequently Asked Questions
+% LaTeX Template
+% Version 1.0 (22/7/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adam Glesser (adamglesser@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry} % Required to make the margins smaller to fit more content on each page
+\usepackage[linkcolor=blue]{hyperref} % Required to create hyperlinks to questions from elsewhere in the document
+\hypersetup{pdfborder={0 0 0}, colorlinks=true, urlcolor=blue} % Specify a color for hyperlinks
+\usepackage{todonotes} % Required for the boxes that questions appear in
+\usepackage{tocloft} % Required to give customize the table of contents to display questions
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage{palatino} % Use the Palatino font
+
+\usepackage{amsmath, amsfonts, amsthm} % Math packages
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+% Create and define the list of questions
+\newlistof{questions}{faq}{\large List of Frequently Asked Questions} % This creates a new table of contents-like environment that will output a file with extension .faq
+\setlength\cftbeforefaqtitleskip{4em} % Adjusts the vertical space between the title and subtitle
+\setlength\cftafterfaqtitleskip{1em} % Adjusts the vertical space between the subtitle and the first question
+\setlength\cftparskip{.3em} % Adjusts the vertical space between questions in the list of questions
+
+% Create the command used for questions
+\newcommand{\question}[1] % This is what you will use to create a new question
+{
+\refstepcounter{questions} % Increases the questions counter, this can be referenced anywhere with \thequestions
+\par\noindent % Creates a new unindented paragraph
+\phantomsection % Needed for hyperref compatibility with the \addcontensline command
+\addcontentsline{faq}{questions}{#1} % Adds the question to the list of questions
+\todo[inline, color=gray!40]{\textbf{\thequestions~\ #1}} % Uses the todonotes package to create a fancy box to put the question
+\vspace{1em} % White space after the question before the start of the answer
+}
+
+% Uncomment the line below to get rid of the trailing dots in the table of contents
+%\renewcommand{\cftdot}{}
+
+% Uncomment the two lines below to get rid of the numbers in the table of contents
+%\let\Contentsline\contentsline
+%\renewcommand\contentsline[3]{\Contentsline{#1}{#2}{}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND LIST OF QUESTIONS
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	QUESTIONS AND ANSWERS
+%----------------------------------------------------------------------------------------
+\section{Computers, People and Programming}
+\subsection{Review}
+
+\question{What is software?}
+Language that computers understand
+\question{Why is software important?}
+That's the only way computers can perform their function
+\question{Where is software important?}
+Wherever a computer is
+\question{What could go wrong if some software fails? List some examples.}
+\begin{itemize}
+\item Satellites can get lost in space
+\item Unable to do your homework
+\item Unable to move a vehicle
+\end{itemize}
+
+\question{Where does software play an important role? List some examples.}
+\begin{itemize}
+ \item Interact with HMI
+ \item Code/Decode TCP stream packets
+ \item Blink turn signals on a vehicle
+\end{itemize}
+
+\question{What are some jobs related to software development? List some.}
+\begin{itemize}
+ \item Design
+ \item Analyst
+ \item Coder
+ \item Tester
+\end{itemize}
+
+\question{What's the difference between computer science and programming?}
+
+\question{Where in the design, construction, and use of a ship is software used?}
+During concept, design, simulation, testing
+\question{What is a server farm?}
+Shared space where clusters serve a finite number of companies
+\question{What kinds of queries do you ask online? List some.}
+
+\question{What are some uses of software in science? List some.}
+simulation, analysis, prediction
+\question{What are some uses of software in medicine? List some.}
+DICOM, image analysis, triage, clinical diagnosis
+\question{What are some uses of software in entertainment? List some.}
+games, 3D, sci-fi
+\question{What general properties do we expect from good software?}
+scalable, understandable, portable
+\question{What does a software developer look like?}
+human being
+\question{What are the stages of software development?}
+analysis, design, code, test
+\question{Why can software development be difficult? List some reasons.}
+obscure programming, time constraints
+\question{What are some uses of software that make your life easier?}
+internet, fuel injection
+\question{What are some uses of software that make your life more difficult?}
+driving asistance
+
+\subsection{Exercises}
+
+\question{Pick an activity you do most days (such as going to class, eating dinner, or watching television) . Make a list of ways computers are directly or in­directly involved.}
+\textbf{eating dinner:} microwave (whenever was deisned and what cad software was used, define HMI and its controls), dishes (test durability among other functions), cutlery (determine the material to manufacture and its proportions to make it light enough but durable)
+
+\question{Pick a profession, preferably one that you have some interest in or some knowledge of. Make a list of activities done by people in that profession that involve computers.}
+\textbf{hospital premises:} set an appointment and get a confirmation, laboratory equipment (clinical diagnosis and their results, HMI), imaging diagnosis (CT Scan, MRI)
+
+\question{Swap your list from exercise 2 with a friend who picked a different pro­fession and improve his or her list. When you have both done that, compare your results. Remember: There is no perfect solution to an open-ended exercise; improvements are always possible.}
+
+\question{From your own experience, describe an activity that would not have been possible without computers.}
+computed imaging diagnosis
+
+\question{Make a list of programs (software applications) that you have directly used. List only examples where you obviously interact with a program (such as when selecting a new song on an MP3 player) and not cases where there just might happen to be a computer involved (such as turn­ing the steering wheel of your car).}
+change TV channel, select radio station, washing machine program
+
+\question{Make a list of ten activities that people do that do not involve computers in any way, even indirectly. This may be harder than you think!}
+outdoor activities, pay with cash, make fire, drink plain water, talk, hunt, sex
+
+\question{Identify five tasks for which computers are not used today, but for which you think they will be used for at some time in the future. Write a few sentences to elaborate on each one that you choose.}
+hire/fire personnel, open/close a business, triage systems within hospital premises
+
+\question{Write an explanation (at least 100 words, but fewer than 500) of why you would like to be a computer programmer. If, on the other hand, you are convinced that you would not like to be a programmer, explain that. In either case, present well-thought-out, logical arguments.}
+If related to any technical position, even for managers, programming should be a a must. It clearly helps to make better decisions, make the complex easier to digest, great ability to make you better, and more confident about your capabilities.
+
+\question{Write an explanation (at least 100 words, but fewer than 500) of what role other than programmer you'd like to play in the computer industry (independently of whetl1er "programmer" is your first choice).}
+
+\question{Do you think computers will ever develop to be conscious, thinking be­ings, capable of competing with humans ? Write a short paragraph (at least 100 words) supporting your position.}
+Definetely, feasible enough to see a computer building another computer, or programming. Hard to see though a computer solving human kind problems, but computer problems.
+
+\question{List some characteristics that most successful programmers share. Then list some characteristics that programmers are popularly assumed to have.}
+Open source related projects
+
+\question{Identify at least five kinds of applications for computer programs men­tioned in this chapter and pick the one that you find the most interesting and that you would most likely want to participate in someday. Write a short paragraph (at least 100 words) explaining why you chose the one you did.}
+Medical related applications. How to solve common problems with a software related discipline
+
+\question{How much memory would it take to store (a) this page of text, (b) this chapter, (c) all of Shakespeare's work? Assume one byte of memory holds one character and just try to be precise to about 20\%.}
+\begin{math}
+Store_{line} = 80 \frac{char}{line} * \frac{1~\ byte}{1~\ char} = 80 \frac{byte}{line} \\
+Store_{page} = 80 \frac{byte}{line} * 40 \frac{line}{page} = 3200 \frac{byte}{page} \\
+Store_{book} = 3200 \frac{byte}{page} * 1300 \frac{page}{book} = 4160000 \frac{byte}{book}
+\end{math}
+
+\question{How much memory does your computer have? Main memory? Disk?}
+8GB ram memory, 500GB ssd
+
+
+\section{Hello, World!}
+\subsection{Review}
+
+\question{What is the purpose of the "Hello, World!" program?}
+Understand the compiling process, linker and output generated.
+\question{Name the four parts of a function.}
+name, parameter list, function body, return type
+\question{Name a function that must appear in every C++ program.}
+int main()
+\question{In the "Hello, World !" program, what is the purpose of the line return 0; ?}
+error code 
+\question{What is the purpose of the compiler?}
+transalte human readable text to machine executable
+\question{What is the purpose of the \#include directive?}
+tell the compiler that some functionalities to be used are defined in the header file
+\question{What does a .h suffix at the end of a file name signify in C++?}
+header file
+\question{What does the linker do for your program?}
+merge the declaration of header files and code provided
+\question{What is the difference between a source file and an object file?}
+depends who interprets the file, a human or a machine
+\question{What is an IDE and what does it do for you?}
+leverage the process of compiling and make ypur life easier
+\question{If you understand everything in the textbook, why is it necessary to practice?}
+the best way to learn
+
+\subsection{Exercises}
+\question{Write a definition for each of the terms from "Terms."}
+\begin{itemize}
+ \item //: used to place comments
+ \item C++: programming language
+ \item comment: non-machine readable code
+ \item compiler: transalte human code to machine code
+ \item compile-time error: error that occurs at the time of compiling
+ \item cout: standard output, i.e. displat, screen,...
+ \item executable: object code that can be interpreted by a computer
+ \item function: piece of code that performs some action
+ \item header: files where function definitions are expected
+ \item IDE: integrated development environment application
+ \item \#include: tells the compiler where some functionalities are defined
+ \item library: set of files packed togheter to perform a specific action
+ \item linker: helps the compiler merge off-the-shel code with our code
+ \item main(): function where everything begins
+ \item object code: code readble for a computer
+ \item output: desired action performed by a function
+ \item program: another terminaology for object code
+ \item source code: human readble code
+ \item statement: every line of a source code
+\end{itemize}
+
+\section{Objects, Types and Values}
+\subsection{Review}
+
+\question{What is meant by the term prompt?}
+in a terminal, where you write statements
+\question{Which operator do you use to read into a variable?}
+assignement = operator
+\question{If you want the user to input an integer value into your program for a variable named number, what are two lines of code you could write to ask the user to do it and to input the value into your program?}
+\begin{verbatim}
+ cout << "Enter integer value:\n";
+ int value;
+ cin >> value;
+\end{verbatim}
+
+\question{What is \\n called and what purpose does it serve?}
+newline onto cout
+\question{What terminates input into a string?}
+blank space
+\question{What terminates input into an integer?}
+blank space
+
+\question{How would you write:\\
+  \quad cout \textless\textless~\ "Hello, ";\\
+  \quad cout \textless\textless~\ first\_name;\\
+  \quad cout \textless\textless~\ "!n"; \\
+as a single line o code?
+}
+\begin{verbatim}
+ cout << "Hello, " << fist_name << "!\n";
+\end{verbatim}
+
+\question{What is an object?}
+place where variables are stored in memory
+\question{What is a literal?}
+a number
+\question{What kinds of literals are there?}
+real, complex
+\question{What is a variable?}
+type of object in memory to store values
+\question{What are typical sizes for a char, an int, and a double?}
+char ~ 1 byte, int ~ 4byte, double ~ 8 byte
+\question{What measures do we use for the size of small entities in memory, such as ints and strings?}
+
+\question{What is the difference between = and =+}
+'=' is a read operator, whereas '==' is compare operator
+\question{What is a definition?}
+where a variable is declared
+\question{What is an initialization and how does it differ from an assignment?}
+at compile time, an value is initialized; at run time assignemnts can be done
+\question{What is string concatenation and how do you make it work in C++?}
+merge of strings in a single one, with the operator '+'
+
+\question{Which of the following are legal names in C++? If a name is not legal, why not? \\
+\quad This\_little\_pig \quad This\_1\_is fine \quad 2\_For\_1\_special \\
+\quad latest thing \qquad the\_\$12\_method \qquad \_this\_is\_ok \\
+\quad MiniMineMine \qquad number \qquad correctl
+}
+legal means no compile error. Not allowed numbers or special chars as the character in a variable name; no special chars also in the name
+
+\question{Give five examples of legal names that you shouldn't use because they are likely to cause confusion.}
+int string\_value, char int\_value, char \_foo
+\question{What are some good rules for choosing names? }
+self describe their meaning, not long names, consistency
+\question{What is type safety and why is it important?}
+implicit conversion of variables from one type to another, likely to miss information
+\question{Why can conversion from double to int be a bad thing?}
+missing some precision
+\question{Define a rule to help decide if a conversion from one type to another is safe or unsafe.}
+if performing a second conversion gives the original value back, assume the conversion is safe
+
+\subsection{Exercises}
+
+\section{Computation}
+\subsection{Review}
+
+\question{What is a computation?}
+reading inputs to perform some actions and deliver ouptuts
+\question{What do we mean by inputs and outputs to a computation? Give exam ples.}
+read temperature sensor, compute a PID algorithm to update ssr output
+\question{What are the three requirements a progranuner should keep in mind. when expressing computations? }
+a software must be simple, efficient and work as expected
+\question{What does an expression do?}
+evaluate as true or false
+\question{What is the difference between a statement and an expression, as de­scribed in this chapter?}
+statament ends with semicolon ';', whereeas an expression does not
+\question{What is an lvalue? List the operators that require an lvalue. Why do these operators, and not the others, require an lvalue?}
+lvalue is the left inside of an assignement, an object type. Assignment '=' and compound assignement '+=','-=','*=','/=' and '\%=' require and lvalue. Because they do appear in the left inside of the assignemnt, and thus must update the value type they are holding.
+\question{What is a constant expression?}
+that is assigned to a value that it's not expected to change at runtime
+\question{What is a literal?}
+represent values of varouis types
+\question{What is a symbolic constant and why do we use them?}
+a value that is well defined and universal
+\question{What is a magic constant? Give examples.}
+non-obvious constant literals
+\question{What are some operators that we can use for integers and floating-point values?}
+operators: +,-,*,/
+\question{What operators can be used on integers but not on floating-point numbers?}
+modulo operator '\%'
+\question{What are some operators that can be used for strings?}
++, *
+\question{When would a programmer prefer a switch-statement to an if-statement?}
+working with enums
+\question{What are some common problems with switch-statements?}
+only work for const integer values
+\question{What is the function of each part of the header line in a for-loop, and in what sequence are they executed?}
+initializer, expression, loop number
+\question{When should the for-loop be used and when should the while-loop be used?}
+the control variable needs to be initialized beforehand in a while-loop
+\question{How do you print the numeric value of a char?}
+assign the char to an integer variable and print it
+\question{Describe what the line char foo(int x) means in a function definition.}
+return type as char, name function to be called foo with an integer as argument.
+\question{When should you define a separate function for part of a program? List reasons.}
+one function performs a single action at a time, assuming that the action make happen a few times in our code
+
+\question{What can you do to an int that you cannot do to a string?}
+most arithmetic operations: /, -, \%, use as case switch
+\question{What can you do to a string that you cannot do to an int?}
+as a string or stream of charecters, uppercase, lowercase, ...
+\question{What is the index of the third element of a vector?}
+number 2
+\question{How do you write a for-loop that prints every element of a vector? \\ vector\textless char \textgreater alphabet(26); do?}
+\begin{verbatim}
+for(int =0;i< alphabet.size();i++)
+    cout << alphabet[i] << '\n' 
+\end{verbatim}
+\question{Describe what push\_back() does to a vector.}
+member function that lets add a value to vector type
+\question{What do vector's member functions begin(), end(), and size() do?}
+begin identifies the first element of a vector, end for the last element and size keeps track of the number of elements sotored in the vector
+\question{What makes vector so popular/useful?}
+dynamic allocation, optimized versus an array
+\question{How do you sort the elements of a vector?}
+using function sort(begin(),end())
+
+\section{Errors}
+\subsection{Review}
+
+\question{Name four major types of errors and briefly define each one.}
+compile time errors: detected by compilers dur to syntax error \\
+linker time errors: missing defintions when merging libraries and source code \\
+run-time errors: fails to execute due to bad code behavior \\
+logic errors: fail to perform as expected due to wrong interpretation
+\question{What kinds of errors can we ignore in student programs?}
+hardware related, up to some extent
+\question{What guarantees should every completed project offer?}
+should produce expected output, give reasonable errors when something goes wrong
+\question{List three approaches we can take to eliminate errors in programs and produce acceptable software.}
+organize software to minimize errors\\
+check on errors through debugging and testing \\
+reamining errors are not serious
+\question{Why do we hate debugging?}
+teodious task, 
+\question{What is a syntax error? Give five examples.}
+not defined as C++ standard
+\question{What is a type error? Give five examples.}
+mismatch between a type variable and its assignment or initialization
+\question{What is a linker error? Give three examples.}
+mismatch between defined function and its definition, i.e. arguments, output,..
+\question{What is a logic error? Give three exan1ples.}
+a source code that does not provide the expected output
+\question{List four potential sources of program errors discussed in the text.} 
+poor specification: undefined uses of a program provoke undesired result \\
+incomplete programs: missing source code to handle expected/unexpected inputs \\
+unexpected arguments: take care of unexpected inputs of a function
+unexpected input: user typed input to a program that don't follow the rules \\
+unexpected state: data that is either incomplete or wrong \\
+logical error: code that doesn't do what's expected to do
+\question{How do you know if a result is plausible? What techniques do you have to answer such questions?}
+double check with other sources, test on known outputs as per expected inputs, and make simple estimations 
+\question{Compare and contrast having the caller of a function handle a run-time error vs. the called function's handling the run-time error.}
+withtin the called function, only in a single place the code is easy to maintain, whereas to very caller perform the same code n times
+\question{Why is using exceptions a better idea than returning an "error value"?}
+not every single returned value is interpreted, think of Linux and Windows.
+\question{How do you test if an input operation succeeded?}
+
+\question{Describe the process of how exceptions are thrown and caught.}
+within the code to an unwanted variable values, you throw an exception statemant, that later in a try-catch block, the exception in processed and shows information to the user.
+\question{Why, with a vector called v, is v[v.size()] a range error? What would be the result of calling this?}
+access to an unknown memory location, as the vector exactly allocated space for n variables, not n+1!
+\question{Define pre-condition and post-condition; give an example (that is not the area() function from this chapter), preferably a computation that requires a loop.}
+pre-condition, tests the input arguments in a function; in a post-condition, the output is tested before returing a value. 
+\question{When would you not test a pre-condition?}
+nobody would give bad arguments \\
+slows down performance \\
+too complicated to check
+\question{When would you not test a post-condition?}
+when a comment suffices a trivial operation
+\question{What are the steps in debugging a program ?}
+compile, link and run... over thousand times
+\question{Why does commenting help when debugging?}
+makes the code easier to read
+\question{How does testing differ from debugging?}
+testing is a systematic way to search for errors
+
+\section{Writing a program}
+\question{What do we mean by "Programming is understanding"?}
+understand what the problem we're trying to solve
+\question{The chapter details the creation of a calculator program. Write a short analysis of what the calculator should be able to do.}
+work with basic operators: +, -, *, / with double types. generate errors upon bad inputs, use of parenthesis for the sake of clarity, handle division by zero.
+\question{How do you break a problem up into smaller manageable parts?}
+trust on usage of tools o libraries that help, experience that sort parts of the solution
+\question{Why is creating a small, limited version of a program a good idea?}
+focus on the key problem helps understand the problem or tools, break down problem statement to manageable parts
+\question{Why is feature creep a bad idea?}
+start building alimed version taht solves the problem, at a later stage build full-scale by working on parts
+\question{What are the three main phases of software development?}
+analysis, design and implemtentation
+\question{What is a "use case"?}
+a scenario where a software receives an external request and responds to it
+\question{What is the purpose of testing?}
+use cases to minimze logical errors, build upon software requirements
+\question{According to the outline in the chapter, describe the difference between a Term, an Expression, a Number, and a Primary.}
+Primary stands for operators and operands \\
+Number converted primary input text to double \\
+Expression, handles +,- operations \\
+Term, handles *,// operations
+\question{In the chapter, an input was broken down into its component Terms, Expressions, Primarys, and Numbers. Do this for (17+4)/(5-1).}
+Primarys: operators and operands that fit into stream: key, value \\
+Numbers: doubles as 17, 4, 5, 1\\
+Expressions (+,-): 17+4, 5-1\\
+Terms (*,/): (17+4)\emph{/}(5-1)
+\question{Why does the program not have a function called number()?}
+once the key is read, cin interprets the pair value as double
+\question{What is a token?}
+a key pair value taht holds the input stream 
+\question{What is a grammar? A grammar rule?}
+we write grammar defining the syntax of our input and then write a program that implements the rules of the grammar
+\question{What is a class? What do we use classes for?}
+a class is a user defined type, useful when none of existing types statisfies our needs
+\question{What is a constructor?}
+instance of how to generate a user defined type in our code
+\question{In the expression function, why is the default for the switch-statement to "put back" the token?}
+because we read char at once, and we need to convert numbers bigger than 9, otherwise the number will show as cropped 
+\question{What is "look-ahead"?} 
+
+\question{What does putback() do and why is it useful?} 
+for numbers, let's store more that a single digit number
+\question{Why is the remainder (modulus) operation,\% , difficult to implement in the term()?} 
+as long as we're working with doubles, modulo only applies to integer
+\question{What do we use the two data members of the Token class for?}
+when reading the token stream, identifies which token is an operator or number
+\question{Why do we (sometimes) split a class's members into private and public  members?}
+user has access to public members about how the class, not the implementation itself
+\question{What happens in the Token\_stream class when there is a token in the  buffer and the get() function is called?}
+we inmediately return the stored token
+\question{Why were the ';' and 'q' characters added to the switch-statement in the get() function of the Token\_stream class?}
+non operators by defintion, rather exit code (q) and solve operation (;)
+\question{When should we start testing our program?}
+as soon as possible
+\question{What is a "user-defined type"? Why would we want one?}
+also called class, when the standard library does not provide a type that suit our needs
+\question{What is the interface to a C++ "user-defined type"?}
+members functions defined inside the class
+\question{Why do we want to rely on libraries of code?}
+to focus on the real problem, helps to leviate the implementation whenever a library suits our needs
+
+\section{Completing a Program}
+\subsection{Review}
+\question{What is the purpose of working on the program after the first version works? Give a list of reasons.}
+keep adding new features \\
+make the code cleaner, simpler and more efficient \\
+\question{Why does "1+2; q" typed into the calculator not quit after it receives an error?}
+because the main loop handles execptions and cleans cin for keep running
+\question{Why did we choose to make a constant character called  number?}
+to make the code fre from magic constants
+\question{Why do we split code into multiple functions? State principles.}
+make the code cleaner, as states one function for a single action. splitting helps to keep code easier to maintain
+\question{We split main() into two separate functions. What does the new function do and why did we split main()?}
+one function holds the original code to perform 'expressions' and the other keeps variable assignment to read pseudo-code
+\question{What is the purpose of commenting and how should it be done?}
+comments should clarify what's not easy to explain in code
+\question{What does narrow\_cast do?}
+type of cast that checks the casted value with the original one and is able to throw an exception if the results are different
+\question{What is the use of symbolic constants?}
+avoid magic constants in the code that are difficult to trace
+\question{Why do we care about code layout?}
+easier to read and maintain, keep structured layout helps scalability
+\question{How do we handle \% (remainder) of floating-point numbers?}
+because \% modulo operator does not hold double operands
+\question{What does is\_declared() do and how does it work?}
+reads through the vector of variables returning true when the variable already exists, false otherwise
+\question{The input representation for let is more than one character. How is it accepted as a single token in the modified code?}
+for 'let' it's acknowledge as 'L' in the token kind
+\question{What are the rules for what names can and cannot be in the calculator program?}
+variables must start with alpha characters, no symbols nor numbers
+\question{Why is it a good idea to build a program incrementally?}
+easier to find bugs while testing as you go on
+\question{When do you start to test?}
+everytime is a good  practice to keep testing, do it asap
+\question{When do you retest?}
+when the code has changed to be sure the old code still works as expected
+\question{How do you decide what should be a separate function?}
+stick to a rule of a function holds a single action
+\question{Why do you add comments?}
+let the reader understand what's not so easier to follow on the code
+\question{What should be in comments and what should not?}
+a developer should read through the grammar what the code does or its implemented,
+\question{When do we consider a program finished?}
+hard to say that a code is free from errors, what we can to is to minimize through test as much as possible
+
+\section{Technicalities: Functions, Etc}
+\subsection{Review}
+
+\question{What is the difference between a declaration and a definition?}
+declaration shows the way to use a function, rather than how it's done through its declaration
+\question{How do we syntactically distinguish between a function declaration and a function definition?}
+function declaration ends with semicolon ';', whereas a definition uses curly brackets '{' and '}'
+\question{How do we syntactically distinguish between a variable declaration and a variable definition?}
+a declaration sets the type adn name, and a definition includes its initialization
+\question{Why can't you use the functions in the calculator program from Chapter 6
+without declaring them first?}
+at least the compiler needs to know how to use the function or description, before it can be used elsewhere
+\question{Is int a; a definition or just a declaration?}
+declaration
+\question{Why is it a good idea to initialize variables as they are declared?}
+to reduce the risk of using a variable of an unknown value
+\question{What can a function declaration consist of?}
+declaration must include return value as return, name of the fucntion and argument list if any with their type
+\question{What good does indentation do?}
+makes code reading more pleasent
+\question{What are header files used for?}
+header files hold classes, enums and function declaration
+\question{What is the scope of a declaration?}
+as long as the declaration is included in a header file, the scope is local
+\question{What kinds of scope are there? Give an example of each.}
+namespace: named scope inside a global scope or any \\
+global: area outside any scope \\
+class: area within the class \\
+local: between '{,}' of a function definition or block \\
+statement: for loop , do-while,..
+\question{What is the difference between a class scope and local scope?}
+local scope refers to functions, whereas class has own space
+\question{Why should a programmer minimize the number of global variables?}
+tend to be problematic on the long run
+\question{What is the difference between pass-by-value and pass-by-reference?}
+by value keeps a copy of the original value, where by reference does not
+\question{What is the difference between pass-by-reference and pass-by-const­-reference?}
+by const means that the value will not change its value, otherwise by-reference means that the value will be updated
+\question{What is a swap()?}
+swap functions takes two arguments to exchange its value one another
+\question{Would you ever define a function with a vector \textless double \textgreater -by-value parameter?}
+for large amount of data, use by-reference its a preferred solution. Only by value if the amount of data its small
+\question{Give an exam ple of undefined order of evaluation. Why can undefined order of evaluation be a problem?}
+f(++i,++i): its upon the compiler, system the value passed onto function f
+\question{What do x\&\& y and x\textbar\textbar y, respectively, mean?}
+logical operators to evaluate two expressions, AND or OR
+\question{Which of the following is standard-conforming C++: functions within functions, functions within classes, classes within classes, classes within functions?}
+functions within classes, known as member functions. The functions wihtin functions its no allowed, the rest can be used with caution
+\question{What is a call stack and why do we need one?}
+stack hold the local space, or activation records for a specific function. And keeps track of nested calls that when complete serves back the original value as a LIFO queue
+\question{What is the purpose of a namespace?} 
+set an isolated environment for a set of entities that won't clash with other definitions of other namespaces, providing a unique identifier for such namespace
+\question{How does a namespace differ from a class?}
+class helps to organize data and functions; a namespace holds classes, functions, into an identifiable and named part of a program without defining a type
+\question{What is a using declaration?} 
+tells the complier which namespace uses a specific function, or data member; avoids keep using the fully qualified name
+\question{Why should you avoid using directives in a header?}
+helps to loose track of which namespace you're using
+\question{What is namespace std?} 
+the standard library namespace
+
+\section{Technicalities: Classes, Etc}
+\subsection{Review}
+
+\question{What are the two parts of a class, as described in the chapter?}
+public act as the interface to a class, and private implementation details hidden from public access
+\question{What is the difference between the interface and the implementation in a class?}
+interface is public, and implementation is declared as private
+\question{What are the limitations and problems of the original Date struct that is created in the chapter?}
+how to catch errros at compile-time, instead run-time. Ability to change date month, year or day without control
+\question{Why is a constructor used for the Date type instead of an init\_day() function?}
+performs the same as the helper function, but checks the validity of the data at the time of creation of the Date type.
+\question{What is an invariant? Give examples.}
+invariant are rules to be valid. for instance is not expected a year to be below zero, but can be.
+\question{When should functions be put in the class definition, and when should they be defined outside the class? Why?}
+outside the class, called helper functions, remain for those functions that provide by itself an elegant and efficient solution, shpould be kept outside the class. After all, the class must be kept simple, also helps debugging by limiting the usual suspects of the list
+\question{When should operator overloading be used in a program? Give a list of operators that you might want to overload (each with a reason).}
+by defualt the compiler provide the copy construnctor and copy assignment, others such '==', '!=', '<<' or '>>' are not provided, so must be implemented as helper fucntions
+\question{Why should the public interface to a class be as small as possible?}
+keep understanding of the class simple, whitout misunderstanding. Helps to keep track of bugs
+\question{What does adding const to a member function do?}
+making a memeber const, makes mandatory to be used by constant references
+\question{Why are "helper functions" best placed outside the class defintion?}
+helper functions are design concept rather than programming language concept
+
+\section{Input and Output Streams}
+\subsection{Review}
+
+\question{When dealing with input and output, how is the variety of devices dealt with in most modern computers?}
+we're taking about keyboard, or audio stream, stream or http...
+\question{What, fundamentally, does an istream do?}
+handles how an input stream from a device driver, writes data stream to file
+\question{What, fundamentally, does an ostream do?}
+also uses a device driver to communicate to outside world, i.e. hdd, ssd, audio,..
+\question{What, fundamentally, is a file?}
+handles all input and output streams to and from the computer
+\question{What is a file format?}
+how the data stored in a file is to be handled
+\question{Name four different types of devices that can require I/O for a program.}
+audio, disk drive, http, wacom digitizer
+\question{What are the four steps for reading a file?}
+name the file, create ifstream to file, read data, close ifstream
+\question{What are the four steps for writing a file?}
+name the file, create ofstream to file, write data, close ofstream
+\question{Name and define the four stream states.}
+good(), eof(), fail(), bad()
+\question{Discuss how the following input problems can be resolved: \\
+ a. The user typing an out-of-range value\\
+ b. Getting no value (end of file)\\
+ c. The user typing something of the wrong type}
+ a. check validity upon receiving values \\
+ b. eof() indicates no more data pending \\
+ c. sets fail() to give chance to recover if needed, bad() must abort operation
+\question{In what way is input usually harder than output?}
+we must check for a higher likelihood of mistyped data
+\question{In what way is output usually harder than input?}
+in a way to use graphical environments to interact with user
+\question{Why do we (often) want to separate input and output from computation?}
+computation takes input data to perform operations and shows its results to the output
+\question{What are the two most common uses of the istream member function
+clear()?}
+clear() removes fail bit to reinitialize the cin, accepting more inputs
+\question{What are the usual function declarations for << and >> for a user-defmed
+type X?}
+using self defined \textless\textless or \textgreater\textgreater, handles the input and output streams for our defined types
+
+\section{Customizing Input and Output}
+\subsection{Review}
+
+\question{Why is I/O tricky for a programmer?}
+desired input among all the possibilities
+\question{What does the notation << hex do?}
+display the following number in hex notation
+\question{What are hexadecimal numbers used for in computer science? Why?}
+hardware, it matches 4bit with a single representation
+\question{Name some of the options you may want to implement for formatting integer output.}
+decimal, hexadecimal and octal, maybe binary
+\question{What is a manipulator?}
+adapts or changes its value to show on ostream
+\question{What is the prefix for decimal? For octal? For hexadecimal?}
+dec, hex, and oct
+\question{What is the default output format for floating-point values?}
+general form stands for 6 digit representation
+\question{What is a field?}
+how to represent a number using different bases
+\question{Explain what setprecision() and setw() do.}
+setprecision sets number of output deciamls for double values, whereas setw means the width to use to representa a value on screen
+\question{What is the purpose of file open modes?}
+upon on our needs, and the type of file to write or read, changes where and how is written to it
+\question{Which of the following manipulators does not "stick" : hex, scientific,
+setprecision, showbase, setw?}
+setw, setprecision
+\question{What is the difference between character I/O and binary I/O?}
+character representation codes every input as a single byte, binary uses 4 bytes to code a integer
+\question{Give an example of when it would probably be beneficial to use a binary
+flle instead of a text flle.}
+limited amount of space
+\question{Give two examples where a stringstream can be useful.}
+when parsing lots of text
+\question{What is a file position?}
+pointer to a file where to read or write
+\question{What happens if you position a flle position beyond the end of flle?}
+depends on the os
+\question{When would you prefer line-oriented input to type-specific input?}
+as long as is documented is fine. line oriented seems more tidy
+\question{What does isalnum(c) do?}
+function that returns non-zero value if 'c' is digit  or alpha (uppercase or lowercase), according to locales
+
+\section{A Display Model}
+\subsection{Review}
+
+\question{Why do we use graphics?}
+one of the best ways to learn about object oroented programming
+\question{When do we try not to use graphics?}
+
+\question{Why is graphics interesting for a programmer?}
+display information with in more pleasent way, that text
+\question{What is a window?}
+window as an object where other shapes or objects are attached
+\question{In which namespace do we keep our graphics interface classes (our graphics library)?}
+Graph\_lib::
+\question{What header files do you need to do basic graphics using our graphics library?}
+simple\_window.h, window.h, gui.h, point.h, 
+\question{What is the simplest window to use?}
+simple\_window, is a window with an embedded exit button
+\question{What is the minimal window?}
+Window obbject w/o any attachments, defining its width and height
+\question{What's a window label?}
+window's name at located at the toolbar
+\question{How do you label a window?}
+win.set\_label(\textquotedblleft text here\textquotedblright)
+\question{How do screen coordinates work? Window coordinates? Mathematical coordinates?}
+upper left corner is (0,0), that corresponds to x,y coordinates. The coordinates represents the number of pixel
+\question{What are examples of simple "shapes" that we can display?}
+circle, rectangle, axis,..
+\question{What command attaches a shape to a window?}
+win.attach(object\_to\_attach)
+\question{Which basic shape would you use to draw a hexagon?}
+Polygon and member function add(Point(x,y))
+\question{How do you write text somewhere in a window?}
+using Text object, with its corresponding coordinates
+\question{How would you put a photo of your best friend in a window (using a program you wrote yourself) ?}
+Image image(Point(x,y),\textquotedblleft file\_name\textquotedblright)
+\question{You made a Window object, but nothing appears on your screen. What are some possible reasons for that?}
+if missing a wait\_on\_key(), the window shows up and closes down very fast
+\question{You have made a shape, but it doesn't appear in the window. What are some possible reasons for that?}
+probably missing an atachment of the desired object to the Window object
+
+\section{Graphics Classes}
+\subsection{Review}
+
+\question{Why don't we 'just" use a commercial or open-source graphics library directly?}
+creating a wrapper around the library helps the learning curve of OOP, no matter if its commercial or open source. Also makes it simpler to use
+\question{About how many classes from our graphics interface library do you need to do simple graphic output?}
+Simple\_window class
+\question{What are the header files needed to use the graphics interface library?}
+graph.c, simple\_window.h
+\question{What classes define closed shapes?}
+closed\_polyline
+\question{Why don't we just use Line for every shape?}
+that will be more cumbersome, and grouping objects lets apply atributes to the whole group, or object
+\question{What do the arguments to Point indicate?}
+x and y coordinates
+\question{What are the components of Line\_style?}
+according to an enum, lets use dashed lines for instance and also change the width of the line
+\question{What are the components of Color?}
+color enum, has predefined for us a palette of colors
+\question{What is RBG?}
+red, blue and green, represented a 8 bits each, depending on the color space
+\question{What are the differences between two Lines and a Lines containing two lines?}
+Lines inherint from Line. altough similar, Lines let add more Line as you go, which helps for creating grids for instance
+\question{What properties can you set for every Shape?}
+set\_color, set\_fill\_color
+\question{How many sides does a Closed\_polyline defined by five Points have?}
+4 points, as the last one is generated internally
+\question{What do you see if you define a Shape but don't attach it to a Window?}
+if it's not attached, it won't be drawn
+\question{How does a Rectangle differ from a Polygon with four Points (comers)?}
+constructors are different, Rectangles let you create a rectangle using width and height
+\question{How does a Polygon differ from a Closed\_polyline?}
+
+\question{What's on top: fill or outline?}
+outline
+\question{Why didn't we bother defining a Triangle class (after all, we did define
+Rectangle)?}
+that responds as a matter of use, because rectangle are the most used polygon out there
+\question{How do you move a Shape to another place in a Window?}
+member function move(dx,dy)
+\question{How do you label a Shape with a line of text?}
+use a floating Text object
+\question{What properties can you set for a text string in a Text?}
+set\_color, set\_font, set\_font\_size
+\question{What is a font and why do we care?}
+graphical representation of text, design matters and fonts also does
+\question{What is Vector\_ref for and how do we usc it?}
+vector\_ref holds unnamed objects, use as a vector type
+\question{What is the difference between a Circle and an Ellipse?}
+differs that an ellipse are defined by two radius and one for circles
+\question{What happens if you try to display an Image given a file name that doesn't refer to a file containing an image?}
+it will display no\_image graph in the canvas, plus file not found
+\question{How do you display part of an image?}
+using a mask, and specifying which part of the image won't be shown
+
+\section{Graphics Class Design}
+\subsection{Review}
+
+\question{What is an application domain?}
+graphics is an application domain, where to solve a problem domain to meet client' requirements
+\question{What are ideals for naming?}
+describe logical operations
+\question{What can we name?}
+public function mmebers that describe operations with objects
+\question{What services does a Shape offer?}
+for 'free' we get set\_color, draw, draw\_lines and set\_fill\_color
+\question{How does an abstract class differ from a class that is not abstract?}
+you can't create a class directly from an abstract, rather than inherit from it
+\question{How can you make a class abstract?}
+declare all function members as pure virtual and no member variables 
+\question{What is controlled by access control?}
+who can access public and private member functions or variables
+\question{What good can it do to make a data member private?}
+no direct access to update data members, secures infraudulent changes
+\question{What is a virtual function and how does it differ from a non-virtual function?}
+with virtual functions, a function can be overriden by its derived class
+\question{What is a base class?}
+also called superclass, class where derived classes inherit from
+\question{What makes a class derived?}
+by its declaration as struct derived\_class : base\_class \{\}
+\question{What do we mean by object layout?}
+how members of a class are stored in memory
+\question{What can you do to make a class easier to test?}
+think about it from the beginning, that is as part of the design
+\question{What is an inheritance diagram?}
+a diagram that shows all the relationships between base and derived classes
+\question{What is the difference between a protected member and a private one?}
+protected members can be used from derived classes, whereas private classes only from the original class or base class
+\question{What members of a class can be accessed from a class derived from it?}
+that include public and protected memebers
+\question{How does a pure virtual function differ from other virtual functions?}
+pure virtual functions asks the derived class to define a new function, but virtual can be defined if needed, not mandatory
+\question{Why would you make a member function virtual?}
+if for a derived class makes sense to redefine a fucntion that differs from the original
+\question{Why would you make a virtual member function pure?}
+when you ask for any derived class to define its own function, to keep consistency
+\question{What does overriding mean?}
+in a virtual table of a class, any function declared as virtual in the base class has new definitions and so overrides the original function in the virtual table
+\question{How does interface inheritance differ from implementation inheritance?}
+when a interface is inherit, means the name of members. An implementation inherits the functionality
+\question{What is object-oriented programming?}
+oop stands for encapsulation, inheritance and runtime poly-morphism
+
+\section{Graphing functions and data}
+\subsection{Review}
+
+\question{What is a function of one argument?}
+
+\question{When would you use a (continuous) line to represent data? When do you use (discrete) points?}
+continuos lines matches x axis for continuous variables, such as time. Discrete variables get represented by x,y points
+\question{What function (mathematical formula) defines a slope?}
+ax+b, where a is slope and b the offset
+\question{What is a parabola?}
+\[f(x) = x^{2}\]
+\question{How do you make an x axis? A y axis?}
+Axis x(Axis::x,...)
+\question{What is a default argument and when would you use one?}
+when calling a constructor, and a parameter has no value defined, a default value can ease the creation of that object
+\question{How do you add functions together?}
+as long as both functions share x variable f(x)= f1(x)+f2(x)
+\question{How do you color and label a graphed function?}
+f.set\_color, f.set\_label
+\question{What do we mean when we say that a series approximates a function?}
+taylor series defines that any function can be represented as a sum of finite terms
+\question{Why would you sketch out the layout of a graph before writing the code to draw it?}
+focus on the result rather than the implementation
+\question{How would you scale your graph so that the input will fit?}
+shrink the y values by  a y\_scale factor
+\question{How would you scale the input without trial and error?}
+set the max value and normalize the output
+\question{Why would you format your input rather than just having the file contain "the numbers"?}
+humans are prone to type wrong characters, where a file does not 
+\question{How do you plan the general layout of a graph? How do you reflect that
+layout in your code?}
+define constants that define offsets,...
+
+\section{Graphical user Interface}
+\subsection{Review}
+
+\question{Why would you want a graphical user interface?}
+to interact with users in a more friendly way
+\question{When would you want a non-graphical user interface?}
+interact at low level interfaces
+\question{What is a software layer?}
+code that lays in between the user code and hardware, the ease the use of our application
+\question{Why would you want to layer software?}
+to focus in the application layer, not bothering with implementation details related to hardware interface
+\question{What is the fundamental problem when communicating with an operating system from C++?}
+the os handles calls that might be invisible to our application
+\question{What is a callback?}
+in case of an event, the code that gets executed
+\question{What is a widget?}
+in a gui, any form of interaction, i.e. button, input box,...
+\question{What is another name for widget?}
+control
+\question{What does the acronym FLTK mean?}
+fast light toolkit
+\question{How do you pronounce FLTK?}
+fulltick
+\question{What other GUI toolkits have you heard of?}
+Qt, ultimate++, Kigs, Juce, Noesis GUI, ImGUI, SFML, gtkmm, nana,...
+\question{Which systems use the term widget and which prefer control?}
+
+\question{What are examples of widgets ?}
+buttons, sliders, inboxes, menu,...
+\question{What is the type of the value stored in an inbox?}
+input text
+\question{When would you use a button?}
+enabling or disabling properties
+\question{When would you use an inbox?}
+get input from user
+\question{When would you use a menu?}
+allocate more properties in a compact style
+\question{What is the basic strategy for debugging a GUI program?}
+test as much as possible on the go, at a later stage, more complicated
+\question{What is control inversion?}
+instead of relying on user top-bottom control, the inversion control states that the widget at the bottom, is the one that controls the flow of the user program in a bottom-up style
+\question{Why is debugging a GUI program harder than debugging an "ordinary program using streams for I/O"?}
+many calls may be handled by the os itself, making invisible to the user
+
+\section{Vector and Free Store}
+\subsection{Review}
+
+\question{Why do we need data structures with varying numbers of elements?}
+dynamic space allocation is efficient 
+\question{What four kinds of storage do we have for a typical program?}
+stack, heap, code, static
+\question{What is free store? What other name is commonly used for it? What operators support it?}
+free store is heap memory, new keyword returns a pointer to free store
+\question{What is a dereference operator and why do we need one?}
+dereference a pointer *p, means the value stored at address stored in p
+\question{What is an address? How are memory addresses manipulated in C++?}
+location where an object is stored. in c++ new and \& return addressess
+\question{What information about a pointed·to object does a pointer have? What useful information does it lack?}
+a pointer knows which type of object is pointing to, but lacks number of objects ther are
+\question{What can a pointer point to?}
+a pointer is an 8-byte, so anything that fits in a memory address
+\question{What is a leak?}
+when allocated resources are not free to the system
+\question{What is a resource?}
+can be memory, audio channels,...
+\question{How can we initialize a pointer?}
+using 'new' operator or '\&' operator
+\question{What is a null pointer? When do we need to use one?}
+nullptr is zero, so if a pointer does not point to an object, should be NULL
+\question{When do we need a pointer (instead of a reference or a named object)?}
+whenever an object is expected to change
+\question{What is a destructor? When do we want one?}
+when the object initialized by a constructor gets of scope, a destructor frees resources. Should be defined otherwise a default one is generated
+\question{When do we want a virtual destructor?}
+to let derived classes handle therir own resources
+\question{How are destructors for members called?}
+they get called when the object is destroyed, automatically
+\question{What is a cast? When do we need to use one?}
+rarely need to use cast. reinterpret\_cast, tells compiler to identify a variable witha new type; const\_cast, removes consta from a variable and static\_cast does implicit conversions
+\question{How do we access a member of a class through a pointer?}
+using arrow operator
+\question{What is a doubly-linked list?}
+knows the previous and successor objects; able to move in both directions
+\question{What is this and when do we need to use it?}
+this refers to the object is called
+
+\section{Vectors and Arrays}
+\subsection{Review}
+
+\question{What does "Caveat emptor!" mean?}
+
+\question{What is the default meaning of copying for class objects?}
+shallow copy
+\question{When is the default meaning of copying of class objects appropriate?When is it inappropriate?}
+appropriate when only reading is fine, but for changes that apply to new copied class, a deep copy is need
+\question{What is a copy constructor?}
+by defintion class\_name A=B, where B is also class\_name
+\question{What is a copy assignment?}
+as before but, A=B, assign all elements from B to A
+\question{What is the difference between copy assignment and copy initialization?}
+when initialize means always with same values, predefined. assign ant values
+\question{What is shallow copy? What is deep copy?}
+shallow only copies the pointer to the object, not the object itself, which is a deep copy
+\question{How does the copy of a vector compare to its source?}
+deep copy
+\question{What are the five "essential operations" for a class?}
+constructor(default, one or more arguemts), destructor, copy constructor, copy assignment
+\question{What is an explicit constructor? Where would you prefer one over the
+(default) alternative?}
+when its stated that for a new object, the arguments are forced to follow its constructor(no conversions allowed). To avoid implicit conversions.
+\question{What operations may be invoked implicitly for a class object?}
+constructors
+\question{What is an array?}
+old c-style for allocating elements
+\question{How do you copy an array?}
+element by element
+\question{How do you initialize an array?}
+element by element
+\question{When should you prefer a pointer argument over a reference argument? Why?}
+when changing the object the pointer points to a pointer, otherwise a reference will suffice
+\question{What is a C-style string?}
+array of chars terminated with escape character 0x00
+\question{What is a palindrome?}
+read from left to right or viceversa, the result is the same
+
+\section{Vectors, Templates, Exceptions}
+\subsection{Review}
+
+\question{Why would we want to change the size of a vector?}
+hard to know how much input data we need to store for further processing
+\question{Why would we want to have different element types for different vectors?}
+as a vector can handle a single type in the same vector, define different vector for input types is much needed
+\question{Why don't we just always define a vector with a large enough size for all eventualities?}
+we could, but we have to share finite resources
+\question{How much spare space do we allocate for a new vector?}
+usually, 2 times the size of initialization
+\question{When must we copy vector elements to a new location?}
+when resizing a vector, copy old data to new destination
+\question{Which vector operations can change the size of a vector after construction?}
+for vector type, we have member functions: push\_back( ), resize (  )
+\question{What is the value of a vector after a copy?}
+we have to delete old vector to allocate old space back to the system
+\question{Which two operations define copy for vector?}
+copy constructor( T<>(elem) ) and copy assignment ( T\& operator=(elem) )
+\question{What is the default meaning of copy for class objects?}
+deep copy, that is copy data members and pointers
+\question{What is a template?}
+template is a mechanism that let use types as parameters for classes and functions
+\question{What are the two most useful types of template arguments?}
+1. use templates where performance is essential (i.e. hard real time, numerics)\\
+2. use tempaltes where flexibility in combining information forom several types is essential (i.e. C++ STL,..)
+\question{What is generic programming?}
+write code that works with a variety of input types as parameters, as long as those types meet specific syntatic and semantic requirements
+\question{How does generic programming differ from object-oriented programming?}
+oop relates to class hierarchies and virtual functions, and generic programming to templates. Also generic programming is determined at compile time, and oop at run time
+
+\section{Containers and Iterators}
+\subsection{Review}
+
+\question{Why does code written by different people look different? Give
+examples.}
+although different techniques can be used to handle or store data, the core of the program must be similar; differences come from effiency, i.e. using different set of containers, memory allocators,..
+\question{What are simple questions we ask of data?}
+type, size, constant or volatile, operations to perform with that data,..
+\question{What are a few different ways of storing data?}
+using containers such as: vector, list, array, map,...
+\question{What basic operations can we do to a collection of data items?}
+operators depends on conatiner's type, but for basic operators: */->,[],++/--
+\question{What is an STL sequence?}
+
+\question{What is an STL iterator? What operations does it support?}
+the standard library provides ways of accessing data with iterators, which is a pointer with enhanced capabilities; provides dereference, increment and decrement
+\question{What are some ideals for the way we store our data?}
+constant size with constant values, that lat for the entire program execution
+\question{How do you move an iterator to the next element?}
+pre/post increment '++', advance(iterator,+positions), next(interator,+positions)
+\question{How do you move an iterator to the previous element?}
+pre/post decrement '--', advance(iterator,-positions), next(interator,-positions)
+\question{What happens if you try to move an iterator past the end of a sequence?}
+iterator will move, no problem, problem is when dereference that iterator
+\question{What kinds of iterators can you move to the previous element?}
+only bidirectional and random iterators
+\question{Why is it useful to separate data from algorithms?}
+might be interesting to build a library or reuse at some point, but if data is held in tha algorithm, much harder to reuse after
+\question{What is the STL?}
+The acronym of standard library, where containers, types,... are defined and ready to use
+\question{What is a linked list? How does it fundamentally differ from a vector?}
+linked list uses more memory that standard array because stores pointers to previous and successor elements, provides iterator to access elements, not subscripting is allowed
+\question{What is a link (in a linked list)?}
+a pointer to previous or successor, if bidirectional linked list
+\question{What does insert() do? What does erase() do?}
+in alink provides an efficient method function to add a new element to the list, so resulting list size increments by one element; the oposite to erase
+\question{How do you know if a sequence is empty?}
+when begin() matches end()
+\question{What operations does an iterator for a list provide?}
++,++,-,--,*,->
+\question{How do you iterate over a container using the STL?}
+start from begin() until end() and increment iterator++
+\question{When would you use a string rather than a vector?}
+deal with words massively, provides concatenation by default
+\question{When would you use a list rather than a vector?}
+when a big number of elements are to be accessed and operated
+\question{What is a container?}
+in the free memory, store data that contains data
+\question{What should begin() and end() do for a container?}
+provide methods to access the first and last element of the container
+\question{What containers does the STL provide?}
+vector, list, deque, map, multimap, unordered\_map, unordereed\_multimap, set, multiset, unordered\_set, unordered\_multiset, array
+\question{What is an iterator category? What kinds of iterators does the STL offer?}
+categories in the sense of how to access data; input iterator, output iterator, forward iterator, bidirectional iterator and random access iterator
+\question{What operations are provided by a random-access iterator, but not a bidirectional iterator?}
+subscripting and add/substract integer to iterators
+
+\section{Algorithms and Maps}
+\subsection{Review}
+
+\question{What are examples of useful STL algorithms?}
+copy, find, sort, min, max, accumulate, inner\_product,...
+\question{What does find() do? Give at least five examples.}
+find first occurence in a given container of a satiisfying criteria: equals a value, satisfies a predicate or negated predicate
+\question{What does count\_if() do?}
+given a container, counts elements for a satisfied criteria
+\question{What does sort(b,e) use as its sorting criterion?}
+less '<':  b < e
+\question{How does an STL algorithm take a container as an input argument?}
+uses iterators to container
+\question{How does an STL algorithm take a container as an output argument?}
+using p* or -> and p++, to move through iterator container
+\question{How does an SIL algorithm usually indicate "not found" or "failure"?}
+returns end() iterator, which is last+1 element location
+\question{In which ways does a function object differ from a function?}
+function objects lets store partial summs or accumulators, inner\_product
+\question{What is a function object?}
+class that implements the operator(), and can be used as predicate for several algorithms
+\question{What is a predicate?}
+a conditional that satisfies as bool
+\question{What does accumulate() do?}
+performs sum of a container elements
+\question{What does inner\_product() do?}
+given two input containers, performs the element-wise product for each  element of the conatiners, and adds them up
+\question{What is an associative container? Give at least three examples.}
+refers to pair values stored as key: value. i.e. map container, set container, unordered\_map, ...; sorted data structure with complexity O(log(n)) with balanced binary tree representation
+\question{Is list an associative container? Why not?}
+list refers to linked elements with predecessor and successor; that is a sequence container
+\question{What is the basic ordering property of binary tree?}
+set to balanced
+\question{What (roughly) does it mean for a tree to be balanced?}
+the amount of time required to find elements is ~roughly the same for every object
+\question{How much space per element does a map take up?}
+8 byte left + 8 byte right + 8 byte key + 8 byte datum
+\question{How much space per element does a vector take up?}
+8 byte datum
+\question{Why would anyone use an unordered\_map when an (ordered) map is available?}
+access time for unordered\_map is constant for every element in an ordered map, is a log(n)
+\question{How does a set differ from a map?}
+set key are unique and elements are stores as sorted
+\question{How does a multi\_map differ from a map?}
+multi refers to multiple entries with the same key
+\question{Why use a copy() algorithm when we could "just write a simple loop"?}
+it implements range checking and efficient / performance techniques
+\question{What is a binary search?}
+tests to be true or false according to a predicate
+
+\section{Embedded Systems Programming}
+\subsection{Review}
+
+\question{What is an embedded system? Give ten examples, out of which at least three should not be among those mentioned in this chapter.}
+system with limited resources, i.e. memory, data storage, cpu,... tv remote, spectrum analyzer, automatic gate opener
+\question{What is special about embedded systems? Give five concerns that are
+common.}
+runs in remote places, often unaccessible, runs 24/7, harsh environments, resource limitations, cpu w/o mmu,
+\question{Define predictability in the context of embedded systems.}
+predictabilty for executing code that takes the some amount of time, for hard real time, where time is a constrint, it's not an option
+\question{Why can it be hard to maintain and repair an embedded system?}
+depends on where the system is placed, so little maintainance is possible
+\question{Why can it be a poor idea to optimize a system for performance?}
+if performace optimization means low-level programming, hard to maintain
+\question{Why do we prefer higher levels of abstraction to low-level code?}
+prefered dur to better maintainance, portability, reusability
+\question{What are transient errors? Why do we particularly fear them?}
+errors that occur from time to time, hard to find and debug
+\question{How can we design a system to survive failure?}
+replicate some parts of the system to ensure if a safe state is possible
+\question{Why can't we prevent every failure?}
+perfection is a true enemy
+\question{What is domain knowledge? Give examples of application domains.}
+area of expertise, where subtle differences apply. medical, harsh industrial domains, aerospacial, automotive,..
+\question{Why do we need domain knowledge to program embedded systems?}
+every domain has diffferent requirements and constraints
+\question{What is a subsystem? Give examples .}
+parts of a system when combined as a whole, becomes the system. memory storage, communications, GUI,...
+\question{From a C++ language point of view, what are the three kinds of storage?}
+heap, stack or static memory
+\question{When would you like to use free store?}
+better not to use it
+\question{Why is it often infeasible to use free store in an embedded  system?}
+when predictability is a concern
+\question{When can you safely use new in an embedded system?}
+best at the startup of the system, allocating resources but don't use delete to prevent fragmentation
+\question{What is the potential problem with std::vector in the context of embedded systems?}
+for hard real time, vector uses indirectly free store, that is new and delete
+\question{What is the potential problem with exceptions in the context of embedded systems?}
+no predictability is possible, due to how long does it take to catch the error, and besides that, who's going to read the error?
+\question{What is a recursive function call? Why do some embedded systems programmers avoid them? What do they use instead?}
+recusive function calls itself during a loop, if the loop is to large may show as a stack overflow, better to use a traditional for-loop.
+\question{What is memory fragmentation?}
+in the free store, using new and delete, may show holes that belong at some point to an object,  but once deleted, the space becomes available. If a new object asks for new space, may allocate new space further than the recently deleted one, so leaves behind a hole of memeory and in the long run, causing a memory fragmentation hard to solve
+\question{What is a garbage collector (in the context of programming)?}
+tnds to solve the fragmentation issue, but needs more meory to alocate the system of garbage collector, often not an option in an embedded system
+\question{What is a memory leak? Why can it be a problem?}
+in a program taht runs indefinetely, a leak may cause the memory to grow upto unsustainable limits, causing the program to crash
+\question{What is a resource? Give examples.}
+shared subsystems in a embedded system that must be shared along the pogram execution. memory, processor cycles(time) , power
+\question{What is a resource leak and how can we systematically prevent it?}
+unmanaged code that uses memory, better not to use it
+\question{Why can't we easily move objects from one place in memory to another?}
+pointers refers to objects in memory directly, so moving objects leds to those pointers become invalid, thus we should move the pointers too, which is a garbage collector
+\question{What is a stack?}
+data structure that allocates an arbitrary amount of memory and deallocate the last allocation only; that prevents from memory fragmentation
+\question{What is a pool?}
+collection of objects of the same size, we can allocate and deallocate as much elements as we need but limited by the pool size. no fragmentation occurs as the objects are of the same size
+\question{Why doesn't the use of stacks and pools lead to memory fragmentation?}
+preventing holes between the allocated objects
+\question{What is reinterpret\_cast necessary? Why is it nasty?}
+when dealing with low-level hardware defintion addresses, an unchecked way to link between the application and specific hardware resources is to cast. That needs to be done with the manual open and manually point to specific addresses
+\question{Why are pointers dangerous as function arguments ? Give examples.}
+if dealig with objects, when a subclass size is of different size, a pointer might not point to the beginning of the object as expected. let's say a circle and polygon are subclasses of shape class; defining a pointer to an array of shape objects, using oop means that pointers for polygon and circle are of the same size as shape, that is barely true. better use of references or some defined array class that prevents mislading pointers
+\question{What problems can arise from using pointers and arrays? Give examples.}
+along with the pointer we must explicitely supply a size, which might cause a potential problem. also leds the opportunity to pass a pointer as a result of an implicit conversion from an array of the derived class to a pointer of the base class
+\question{What are alternatives to using pointers (to arrays) in interfaces?}
+use an interface class that reinterprets an array
+\question{What is "the first law of computer science"?}
+don't do it
+\question{What is a bit'?}
+smallest representation in a memory, only to states 0 or 1
+\question{What is a byte?}
+a collection of 8 bits
+\question{What is the usual number of bits in a byte?}
+1 byte
+\question{What operations do we have on sets of bits?}
+\&,\textbar,\textasciicircum,\textasciitilde, $<<$, $>>$
+\question{What is an exclusive or and why is it useful?}
+bit operator that outputs 0 when a and b bitwise are equal, 1 otherwise
+\question{How can we represent a set (sequence, whatever) of bits?}
+bitset
+\question{How do we conventionally number bits in a word?}
+LSB is bit 0 and MSB is far right bit
+\question{How do we conventionally number bytes in a word?}
+LSB byte is right hand side, anf MSB left hand side
+\question{What is a word?}
+depending on a system is equivalent to two bytes or 4 bytes
+\question{What is the usual number of bits in a word?}
+16 bits
+\question{What is the decimal value of Oxf7?}
+16+32+64+128+7=247
+\question{What sequence of bits is Oxab?}
+0b10101011
+\question{What is a bitset and when would you need one?}
+bit representation, for outputting numbers with bits
+\question{How does an unsigned int differ from a signed int?}
+msb is dedicated to indicate +(0) or -(1) in a signed variable
+\question{When would you prefer an unsigned int to a signed int?}
+allocate more space, no need of negative numbers
+\question{How would you write a loop if the number of elements to be looped over was very high?}
+ensure the for-loop variable iterator is appropriate
+\question{What is the value of an unsigned int after you assign -3 to it?}
+the same as max int representation -3
+\question{Why would we want to manipulate bits and bytes (rather than higher level types) '?}
+when accessing low-level resources, i.e. registers, must set or unset bits
+\question{What is a bitfield?}
+specific representation of bits whitin a int number, specified with its location and numner of bits
+\question{For what are bitfields used?}
+register manipulation
+\end{document}

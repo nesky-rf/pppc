@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -std=gnu++17 -o CMakeFiles/ch15_ex2.dir/src/GUI.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/GUI.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/GUI.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -std=gnu++17 -o CMakeFiles/ch15_ex2.dir/src/Graph.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/Graph.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/Graph.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -std=gnu++17 -o CMakeFiles/ch15_ex2.dir/src/Simple_window.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/Simple_window.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/Simple_window.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -std=gnu++17 -o CMakeFiles/ch15_ex2.dir/src/Window.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/Window.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/Window.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -std=gnu++17 -o CMakeFiles/ch15_ex2.dir/src/main.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/main.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/src/main.cpp"
+}
+]

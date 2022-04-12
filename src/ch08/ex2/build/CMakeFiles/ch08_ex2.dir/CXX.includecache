@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch08/ex2/include/std_lib_facilities.h
+algorithm
+-
+cmath
+-
+iostream
+-
+stdexcept
+-
+string
+-
+vector
+-
+
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch08/ex2/src/main.cpp
+../include/std_lib_facilities.h
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch08/ex2/include/std_lib_facilities.h
+

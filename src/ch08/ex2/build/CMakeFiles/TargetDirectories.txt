@@ -1,0 +1,5 @@
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch08/ex2/build/CMakeFiles/edit_cache.dir
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch08/ex2/build/CMakeFiles/package_source.dir
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch08/ex2/build/CMakeFiles/rebuild_cache.dir
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch08/ex2/build/CMakeFiles/package.dir
+/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch08/ex2/build/CMakeFiles/ch08_ex2.dir

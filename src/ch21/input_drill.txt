@@ -1,0 +1,5 @@
+Thinkpad_t430s  123 1099.9
+Samsung_hd34G   456 399.99
+Samsung_note10  892 439.99
+Cross_mod1476   891 119.99
+rossli_14FT     862 49.99

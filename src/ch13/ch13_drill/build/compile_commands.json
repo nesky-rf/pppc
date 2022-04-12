@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -o CMakeFiles/ch13_drill.dir/src/GUI.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/GUI.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/GUI.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -o CMakeFiles/ch13_drill.dir/src/Graph.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/Graph.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/Graph.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -o CMakeFiles/ch13_drill.dir/src/Simple_window.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/Simple_window.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/Simple_window.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -o CMakeFiles/ch13_drill.dir/src/Window.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/Window.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/Window.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/build",
+  "command": "/bin/x86_64-linux-gnu-g++-10  -I/include -g -o CMakeFiles/ch13_drill.dir/src/main.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/main.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch13/ch13_drill/src/main.cpp"
+}
+]

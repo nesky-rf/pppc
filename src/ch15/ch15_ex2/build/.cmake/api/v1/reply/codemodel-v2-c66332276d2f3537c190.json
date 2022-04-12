@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ch15_ex2",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ch15_ex2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch15_ex2-Debug-81eda5232dd3b5895f37.json",
+					"name" : "ch15_ex2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2/build",
+		"source" : "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch15/ch15_ex2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

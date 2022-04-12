@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/build",
+  "command": "/usr/bin/g++  -I/include -g -o CMakeFiles/ch14_ex04.dir/src/GUI.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/GUI.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/GUI.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/build",
+  "command": "/usr/bin/g++  -I/include -g -o CMakeFiles/ch14_ex04.dir/src/Graph.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/Graph.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/Graph.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/build",
+  "command": "/usr/bin/g++  -I/include -g -o CMakeFiles/ch14_ex04.dir/src/Simple_window.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/Simple_window.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/Simple_window.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/build",
+  "command": "/usr/bin/g++  -I/include -g -o CMakeFiles/ch14_ex04.dir/src/Window.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/Window.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/Window.cpp"
+},
+{
+  "directory": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/build",
+  "command": "/usr/bin/g++  -I/include -g -o CMakeFiles/ch14_ex04.dir/src/main.cpp.o -c /home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/main.cpp",
+  "file": "/home/jordi/Downloads/modern_c++/programming_principles_and_practice_using_c++/exercises/src/ch14/ch14_ex4/src/main.cpp"
+}
+]

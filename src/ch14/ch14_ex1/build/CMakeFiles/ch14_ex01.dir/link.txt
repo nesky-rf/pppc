@@ -1,0 +1,1 @@
+/bin/clang++-11 -g -rdynamic CMakeFiles/ch14_ex01.dir/src/GUI.cpp.o CMakeFiles/ch14_ex01.dir/src/Graph.cpp.o CMakeFiles/ch14_ex01.dir/src/Simple_window.cpp.o CMakeFiles/ch14_ex01.dir/src/Window.cpp.o CMakeFiles/ch14_ex01.dir/src/main.cpp.o -o ch14_ex01  /usr/lib/x86_64-linux-gnu/libfltk.so /usr/lib/x86_64-linux-gnu/libfltk_images.so 

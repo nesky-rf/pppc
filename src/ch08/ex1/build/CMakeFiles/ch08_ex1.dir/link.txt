@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-10 -g -rdynamic CMakeFiles/ch08_ex1.dir/src/ch08_ex01.cpp.o -o ch08_ex1 

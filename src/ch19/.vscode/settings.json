@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "*.tcc": "cpp",
+        "functional": "cpp",
+        "random": "cpp",
+        "stdexcept": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "memory_resource": "cpp",
+        "string_view": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "iostream": "cpp"
+    }
+}
